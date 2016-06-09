@@ -8,16 +8,93 @@
 
 }
 @media screen and (max-width: 1280px){
-
+    /*menu*/
+    .menu  { text-align: center;
+        .phone-block { display: none; }
+        ul{ display: inline-block; float: none; padding-left: 0;}
+        li:last-child{ padding-right: 0;}
+    }
 }
 @media screen and (max-width: 1024px){
+    /*header*/
+        .header-wrap{ padding: 51px 0 0;
+            .title-block{margin: 25px auto 0;}
+            .form-block{ margin-top:226px;}
+        }
+    /*END header*/
+    /*menu*/
+    .menu  { background-color: transparent;
+       &.top{position: fixed; top: 0; left: 0; width: 100%;
+           .mbox{ padding: 0;}
+           .phone-block { display: none; }
+           ul{ float: none; background-color: #fffc00; width: 100%; display: none;}
+           li{ display: block; width: 100%; text-align: center; padding-bottom: 25px;
+               a{color: #000; position: relative; padding: 0 10px;
+                   &:hover{color: #ff0000;}
+                   &:after{ content: ''; width: 2px; height: 12px; position: absolute; background-color: #ff0000; left: -1px; bottom: 4px;}
+               }
+               &:after{ display: none;}
+               &:first-child{padding: 0 10px 25px;
+                   &:after{ display: block;}
+               }
+           }
+       }
+        .butter{ display: block;}
 
+    }
+    /*END menu*/
 }
 @media screen and (max-width: 992px){
 
 }
 @media screen and (max-width: 767px){
-
+    /*header*/
+        .header-wrap {min-height: 1px; background-image: none;    padding: 51px 0 0;
+            .phone-block {    padding-bottom: 11px;
+                a { font: 400 22px/1.2 'Avantgarde';
+                    b { font-size: 32px; }
+                    img { margin-top: 10px; width: 24px;}
+                    span { margin-top: 6px; }
+                }
+                .phone-row { margin-bottom: 0;
+                    &:first-child{
+                        img{ width: 33px;}
+                    }
+                }
+            }
+            .title-block { font: 400 23px/26px 'Avantgarde'; margin: 5px auto 0;padding: 14px 5px 26px;
+                .action{transform: rotate(-5deg) scale(0.7);    bottom: -228px; right: -16px;}
+            }
+            .services { flex-wrap: wrap;font: 400 18px/1.2 'Avantgarde';padding-top: 11px;
+                img{ width: 23px;}
+                .service-row { display: block; width: 100%;
+                    &:nth-child(3){ img{margin-top: 4px;}}
+                }
+            }
+            .free{font: 400 47px/1.2 'Avantgarde';    padding-bottom: 7px;}
+            .new-bg{background-image: url(../images/bg-header.jpg); background-position: 37% bottom;   background-repeat: no-repeat;     background-size: 285%;}
+            .form-block {margin-top: 0; padding: 171px 10px 0;
+                input { font: 400 20px/49px 'Avantgarde';
+                    &::-webkit-input-placeholder { color: #fff; font: 400 20px/49px 'Avantgarde'; }
+                    &:-moz-placeholder { color: #fff; opacity: 1; font: 400 20px/49px 'Avantgarde'; }
+                    &::-moz-placeholder { color: #fff; opacity: 1; font: 400 20px/49px 'Avantgarde'; }
+                    &:-ms-input-placeholder { color: #fff; font: 400 20px/49px 'Avantgarde'; }
+                }
+            }
+        }
+    @keyframes bounce {
+        0%   {transform: rotate(-5deg) scale(0.7);}
+        12%  {transform: rotate(-1deg) scale(0.7);}
+        25%  {transform: rotate(-9deg) scale(0.7);}
+        45%  {transform: rotate(-3deg) scale(0.7);}
+        75%  {transform: rotate(-7deg) scale(0.7);}
+        100% {transform: rotate(-5deg) scale(0.7);}
+    }
+    /*END header*/
+    .button {
+        button,
+        a { font: 400 35px/1.2 'Avantgarde'; height: 69px;}
+    }
 }
 @media screen and (max-width: 666px){
 

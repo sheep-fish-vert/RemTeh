@@ -1,5 +1,5 @@
 /*header*/
-    .header-wrap { text-align: center; background-image: url(../images/bg-header.jpg); background-position: center top; background-repeat:no-repeat; min-height: 1005px; padding: 25px 15px 0;
+    .header-wrap { text-align: center; background-image: url(../images/bg-header.jpg); background-position: center top; background-repeat:no-repeat; min-height: 1005px; padding: 25px 0 0; background-size:cover;
         .phone-block {
             a{font: 400 29px/1.2 'Avantgarde'; color: #000; text-decoration: none;
                 b{font-size: 50px; vertical-align: top;}
@@ -8,17 +8,18 @@
             }
             .phone-row{    margin-bottom: 9px;}
         }
-        .title-block { color: #000;display: block; margin: 244px auto 0; width: 100%; max-width: 1140px; background-color: rgba(255,255,0,0.87);font: 400 57px/56px 'Avantgarde'; position: relative; border-top: 2px solid red ; padding: 14px 10px 23px;
+        .title-block { color: #000;display: block; margin: 244px auto 0; width: 100%; max-width: 1140px; background-color: rgba(255,255,0,0.87);font: 400 57px/56px 'Avantgarde'; position: relative; border-top: 3px solid red ; padding: 14px 5px 23px;
             p{ margin: 0;}
             &:after{ content:'';position: absolute; max-width: 964px; width: 100%; height: 9px; bottom: 0; left:50%; transform: translateX(-50%); background-color: #697478;}
             .action{ width: 259px; height: 244px; background-image: url(../images/bg-action.png);font: 400 22px/1 'Avantgarde'; color: #fff;padding: 126px 10px 10px 10px; position: absolute; bottom: -224px; z-index: 10; right: 72px; transform-origin: center top; transform: rotate(-5deg);
                 p{ margin: 0;
                     &:first-child{font-size:32px;    margin-bottom: 16px;}
                 }
+                &:hover{animation-name: bounce;  animation-duration: 0.4s; animation-timing-function: ease-out;}
             }
         }
-        .form-block {margin-top: 41px;
-            input{color:#fff; font: 400 26px/67px 'Avantgarde'; border:3px solid #fff; width: 100%; max-width: 408px; margin: 0 auto 9px; background-color: rgba(0,0,0,0.2);
+        .form-block {margin-top: 41px; padding: 0 10px;
+            input{color:#fff; font: 400 26px/67px 'Avantgarde'; border:3px solid #fff; width: 100%; max-width: 408px; margin: 0 auto 9px; background-color: rgba(0,0,0,0.2); padding-left: 15px;
                 &::-webkit-input-placeholder {color:#fff;font: 400 26px/1.2 'Avantgarde';}
                 &:-moz-placeholder {color:#fff;opacity:1;font: 400 26px/1.2 'Avantgarde';}
                 &::-moz-placeholder {color:#fff;opacity:1;font: 400 26px/1.2 'Avantgarde';}
@@ -26,23 +27,27 @@
                 &.error{ border-color: red;}
             }
         }
-        .services {font: 400 26px/1.2 'Avantgarde'; color: #fff;max-width: 640px;padding-top: 85px;margin: 0 auto;display: flex;justify-content: space-between;    padding-bottom: 5px;
+        .services {font: 400 26px/1.2 'Avantgarde'; color: #fff;max-width: 640px;padding-top: 85px;margin: 0 auto;display: flex;justify-content: space-between;
             p{ margin:0;}
             .service-row{ display: inline-block;
                 &:nth-child(2){ img{margin-top: 7px;}}
                 &:nth-child(3){ img{margin-top: 7px;}}
-
-
             }
-            img{ vertical-align: top;
-
-            }
+            img{ vertical-align: top;}
         }
         .free{font: 400 69px/1.2 'Avantgarde'; color: #fffc00;
             p{ margin: 0;}
         }
         .errorText{ display: none!important;}
     }
+@keyframes bounce {
+    0%   {transform: rotate(-5deg);}
+    12%  {transform: rotate(-1deg);}
+    25%  {transform: rotate(-9deg);}
+    45%  {transform: rotate(-3deg);}
+    75%  {transform: rotate(-7deg);}
+    100% {transform: rotate(-5deg);}
+}
 /*END header*/
 .button{
     button,
@@ -59,6 +64,52 @@
                 &:after{ left: 100%;}
             }
         }
+
     }
 }
+/*menu*/
+    .menu  { height: 66px; background-color: #697276; width: 100%;z-index: 999;
+        .mbox {max-width: 1270px;}
+        .phone-block { float: left;padding-top: 11px;
+            a{font: 400 17px/1.2 'Avantgarde'; color: #fff; text-decoration: none;
+                img{ vertical-align: top;  width: 18px; margin-right: 6px;}
+                span{ display: inline-block;  }
+            }
+            .phone-row{ margin-bottom: 6px;
+                &:first-child{
+                    img{ width: 20px;margin-top: 3px;margin-right: 1px;}
+                }
+            }
+        }
+        ul{list-style-type: none; float: left; margin: 0;padding: 24px 0 0 20px;}
+        li{padding: 0 10px; position: relative; display: inline-block;
+            a{font: 400 17px/1.2 'Avantgarde'; color: #fff; text-decoration: none;
+                &:hover{color: #fffc00;}
+            }
+            &:after{ content: ''; width: 2px; height: 12px; position: absolute; background-color: #fffc00; left: -1px; bottom: 4px;}
+            &:first-child{ padding-left: 0;
+                &:after{ display: none;}
+            }
+        }
+        .butter{ display: none; width: 100%; background-color: #fffc00; position: relative; text-align: center; padding-top: 3px; height: 38px; cursor: pointer;
+            .line{ display: inline-block;vertical-align: top;                margin-top: 7px;
+                p{ width: 23px; height: 4px; margin-bottom: 2px; margin-top: 0; background-color: #000;}
+            }
+            span{ margin-left: 5px;font: 400 21px/1.2 'Avantgarde'; color: #000;}
+            .close-menu{ position: absolute; width: 18px; height: 18px; right: 14px; top: 8px;
+                &:before,
+                &:after{ content: ''; width: 25px; height: 1px; background-color: #000; display: block; position: absolute; top: 9px; left: 0;transform: rotate(0deg);transition: all 400ms;opacity:0;}
+            }
+            &.active{
+                .close-menu{
+                    &:before{transform: rotate(45deg);opacity: 1;}
+                    &:after{transform: rotate(-45deg); opacity:1;}
+                }
+            }
+        }
+    }
+/*END menu*/
+/*top-form*/
+
+/*END top-form*/
 
