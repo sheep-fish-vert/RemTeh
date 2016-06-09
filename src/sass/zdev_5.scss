@@ -150,3 +150,56 @@
     }
 /*END top-form*/
 
+
+/*present*/
+    .present{ background-color: #fdfa1f;    padding-top: 22px;
+        p{ margin: 0;}
+        .present-wrap{ position: relative;}
+        .top-box{ color: #000; text-align: center;
+            h2{font: 400 36px/1.2 'Avantgarde'; margin: 0;}
+            p{font: 400 50px/45px 'Avantgarde';}
+        }
+        .left-box{font: 400 25px/34px 'Avantgarde';color: #000; position: absolute; width: 50%;right: 100%; text-align: right;padding-right: 160px; top: 111px; transition: all 400ms; opacity: 0;
+            &.animated{ opacity:1; right: 50%;}
+            p{max-width: 200px; float: right }
+            &:before{ content: ''; display: block; position: absolute; background-image: url(../images/ic-fix.png); width: 57px; height: 57px; top: 45px;  right: 260px;}
+            .arrow{ width: 100%; height: 5px; background-color: #697478; position: absolute; right: 364px; top: 16px;
+                &:before{ content: ''; position: absolute; display: block; width: 0; height: 0; border-style: solid; border-color: transparent; border-width: 11.5px 20px; border-left-color: #697478; top: -9px; left: 100%;}
+            }
+        }
+        .right-box{font: 400 25px/34px 'Avantgarde';color: #000;position: absolute; width: 50%; left: 100%;padding-left: 109px; top: 111px;transition: all 400ms; opacity: 0;
+            &.animated{ opacity:1; left: 50%;}
+            p{max-width: 265px; }
+            &:before{ content: ''; display: block; position: absolute; background-image: url(../images/ic-bug.png); width: 60px; height: 56px; top: 41px; left: 258px;}
+            .arrow{ width: 100%; height: 5px; background-color: #697478; position: absolute; left: 397px; top: 16px;
+                &:before{ content: ''; position: absolute; display: block; width: 0; height: 0; border-style: solid; border-color: transparent; border-width: 11.5px 20px; border-right-color: #697478; top: -9px; right: 100%;}
+            }
+        }
+        .bottom-box{color: #e01c30; font: 400 41px/1.2 'Avantgarde'; position: relative; text-align: center;    padding: 123px 0 31px;transition: all 400ms; opacity: 0;
+            &.animated{ opacity:1; }
+            &:before{ content: ''; background-image: url(../images/ic-present.png); width: 82px; height: 93px; position: absolute; top: 16px; left:calc(50% - 41px);}
+            &:after{content: ''; background-image: url(../images/shadow.png); width: 250px; height: 86px; position: absolute; bottom: 76px; left:calc(50% - 125px);}
+        }
+    }
+    .gray-pesent{
+        .present{ background-color: #697276;
+            .top-box{color: #fffc00;}
+            .left-box{ color: #fff; top: 142px; padding-right: 138px;
+                p{max-width: 268px;}
+                &:before{ background-image: url(../images/ic-fix2.png); top: -8px; right: 407px;}
+                .arrow{ display: none;}
+            }
+            .right-box{ color: #fff;top: 142px; padding-left: 138px;
+                p{ text-align: right;}
+                &:before{ background-image: url(../images/ic-bug2.png); top: 4px; left: 419px;}
+                .arrow{ display: none;}
+            }
+            .bottom-box{ color: #fff;
+                &:before{ background-image: url(../images/ic-present2.png);}
+            }
+        }
+    }
+
+
+/*END present*/
+
