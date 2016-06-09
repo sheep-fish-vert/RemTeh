@@ -43,6 +43,20 @@
 
     }
     /*END menu*/
+    /*top-form*/
+        .top-form{
+            .top-form-wrap{ padding-top: 0;}
+            .form-wrap{border: none;
+                .form-title{ position: relative; left: auto; top: auto; transform: translateX(0); width: 100%; background-color: transparent;padding-bottom: 40px;}
+            }
+            .triangle{    min-height: 264px; background-position: center bottom;position: relative;
+                h2{ font-size:36px;}
+                p{ font-size:16px;}
+                h3{ font-size:36px;}
+                .arrow{font-size:20px;}
+            }
+        }
+    /*END top-form*/
 }
 @media screen and (max-width: 992px){
 
@@ -100,7 +114,20 @@
 
 }
 @media screen and (max-width: 479px){
-
+    .top-form {
+        .form-wrap {padding-top: 0; padding-bottom: 20px;
+            .form-title{ font-size:25px; padding-bottom:20px;}
+            .form_input{ margin-bottom: 4px;
+                &.half{ width: 100%; margin-right: 0;}
+            }
+            .form_row{ display: block;}
+            .button{ position: relative; left: auto; bottom: auto; transform: translateX(0); padding: 0;}
+        }
+        .triangle{
+            h3{padding: 5px 0 0px;}
+            &:before{ background-size:cover; width: 31px; height: 37px;   bottom: 22px;}
+        }
+    }
 }
 @media screen and (max-width: 320px){
 

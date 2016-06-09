@@ -110,6 +110,43 @@
     }
 /*END menu*/
 /*top-form*/
+    .top-form{
+        .top-form-wrap{ position: relative; background-image: url(../images/bg-topform.jpg); background-position: center bottom; background-size: cover; padding-top: 441px;    padding-bottom: 69px;}
+        .triangle{font-family: 'Avantgarde'; font-weight: 400; line-height: 1.2; color: #000; text-align: center; background-image: url(../images/bg-triangle.png); min-height: 407px; width: 100%; background-position: center top; background-repeat: no-repeat; position: absolute; top: 0; left: 0; background-size: cover;    padding-top: 8px;
+            &:before{ content: ''; background-image: url(../images/arr-down.png); width: 31px; height: 37px; left: calc(50% - 15px); position: absolute;  bottom: 22px;
+            }
+            .animat{opacity: 0; transition:opacity 300ms;
+                &.animated{ opacity:1;}
+            }
+            h2,h3,p,b{ margin: 0; font-weight:400;}
+            h2{font-size: 91px}
+            p{font-size:25px;}
+            h3{font-size:76px;padding: 16px 0 24px;}
+            .arrow{font-size: 34px;}
+        }
+        .form-wrap{max-width: 958px; width: 100%; margin: 0 auto; position: relative; border-radius: 2px; border: 11px solid #cecea6;padding: 54px 10px 129px; opacity: 0; transition:opacity 300ms;
+            &.animated{ opacity:1;}
+            textarea{font: 400 21px/1.2 'Avantgarde'; color: #000; resize: none; width: 100%; border:1px solid #656564;padding-left: 10px;height: 124px;background-color: #ffffed;}
+            input{font: 400 21px/1.2 'Avantgarde'; color: #000; width: 100%; border:1px solid #656564;height: 60px;padding-left: 10px;background-color: #ffffed;
+                &.error{ border-color: red;}
+                  &::-webkit-input-placeholder {font: 400 21px/1.2 'Avantgarde'; color: #000;}
+                            &:-moz-placeholder {font: 400 21px/1.2 'Avantgarde'; color: #000;}
+                           &::-moz-placeholder {font: 400 21px/1.2 'Avantgarde'; color: #000;}
+                       &:-ms-input-placeholder {font: 400 21px/1.2 'Avantgarde'; color: #000;}
+            }
+            .form_row{ width: 100%; display: flex; justify-content:space-between; max-width: 674px; margin: 0 auto;}
+            .form_input {width: 100%; margin-bottom: 10px;
+                &.half { width: 50%; margin-right: 10px;
+                    &:nth-child(2n) { margin-right: 0; }
+                }
+            }
+            .form-title{font: 400 50px/1.2 'Avantgarde'; color: #000; width: 908px; position: absolute; left: 50%; top: -40px; transform: translateX(-50%); background-color: #ffffed; text-align: center;
+                p{ margin:0;}
+            }
+            .errorText{ display: none!important;}
+            .button{ position: absolute; padding: 0 32px; background-color: #ffffed;left: 50%; bottom: -46px; transform: translateX(-50%);    width: 100%;    max-width: 472px;}
+        }
 
+    }
 /*END top-form*/
 

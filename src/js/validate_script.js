@@ -267,6 +267,7 @@ $(document).ready(function(){
 
    validate('#call-popup .contact-form', {submitFunction:validationCall});
    validate('.tel-form', {submitFunction:validationCall});
+   validate('.tel-form2', {submitFunction:validationCall});
    Maskedinput();
    fancyboxForm();
 
