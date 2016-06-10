@@ -147,6 +147,15 @@
                 }
             }
         }
+    .repair{
+        .header-wrap {
+            .title-block{padding: 7px 5px 12px;
+                .subtitle{ font-size:18px; line-height: 1em;}
+                .action{right: 95px;}
+            }
+            .new-bg{ background-image: url(../images/1.jpg);    background-position: 61% bottom; background-size: 253%;}
+        }
+    }
     @keyframes bounce {
         0%   {transform: rotate(-5deg) scale(0.7);}
         12%  {transform: rotate(-1deg) scale(0.7);}
