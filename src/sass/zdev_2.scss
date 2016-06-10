@@ -11,7 +11,7 @@
                 h2{margin: 0; text-align: center; font-size: 51px; font-family: "Avantgarde";   color: rgb(0, 0, 0); line-height: 1.2; }
             }
             ul{ list-style: none; padding: 0; max-width: 990px; margin: 0 auto; padding-top: 54px;
-                li{width: 100%; margin-bottom: 8px;
+                li{width: 100%; margin-bottom: 8px; box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
                     .taba{height: 51px; background-color: #6c7579; color: white; padding-left: 25px; display: flex; align-items: center; justify-content: flex-start;  position: relative; cursor: pointer; font-size: 19px; font-family: "Avantgarde"; color: rgb(255, 255, 255); line-height: 1;
                         &:before{content: ''; position: absolute; right: 18px; top: calc(50% - 5px); width: 0; height: 0; border-style: solid; border-width: 5px 9px 5px 0; border-color: transparent white transparent transparent; transform: rotate(-90deg); transition: all 0.3s;}                        
                     }
@@ -29,7 +29,7 @@
 
 /* bot-form  */
 
-    .bot-form {background-image: url(../images/bot-form-bg.jpg); background-size: cover;
+    .bot-form {background-image: url(../images/3.jpg); background-attachment: fixed;
         .title{ padding-top: 45px; padding-bottom: 80px;
             h2{margin: 0; font-size: 63px; color: rgb(255, 255, 255);   line-height: 1; text-align: center; font-family: "Avantgarde"; font-weight: 400; }
         }
@@ -63,3 +63,44 @@
 
 
 /* bot-form  */
+
+/* call popup */
+
+    #call-popup{ width: 810px; height: auto; min-height: 500px; display: flex; align-items: stretch; justify-content: flex-end; background-image: url(../images/popo.jpg); background-size: cover;
+        .contact-form{ width: 50%; background-color: rgba(256,238,56, 0.8); padding: 50px 15px;
+            .contact-form-title{ padding-bottom: 50px;
+                h5{font-size: 44px; font-family: "Avantgarde"; color: rgb(0, 0, 0); line-height: 1.568;  text-align: center; margin: 0;}
+            }
+            .contact-form-row{
+                input{ width: 100%; background-color: transparent; border: 2px solid black; height: 63px; margin-bottom: 15px; padding-left: 15px; font-size: 22px; font-family: "Avantgarde"; margin-bottom: 5px; 
+                    &::-webkit-input-placeholder {color:black !important; }
+                    &:-moz-placeholder {color:black !important;opacity:1 ;}
+                    &::-moz-placeholder {color:black!important;opacity:1;}
+                    &:-ms-input-placeholder {color:black!important;}
+
+                &.error{ border-color: red !important; 
+                    &::-webkit-input-placeholder {color:red !important; }
+                    &:-moz-placeholder {color:red !important;opacity:1 ;}
+                    &::-moz-placeholder {color:red !important;opacity:1;}
+                    &:-ms-input-placeholder {color:red !important;}
+                }
+                }
+
+                .errorText{display: none !important;}
+
+            }
+            .button button{ font: 400 38px/1.2 'Avantgarde'; height: 80px;
+                p { padding-top: 10px;
+                    span{transition:  all 0.3s; }
+                }
+            }
+            .button button p:before, .button a p:before { background-color: transparent;}
+
+            .button button:hover{
+                p span{color: black;}
+            }
+        }
+
+    }
+
+/* call popup */
