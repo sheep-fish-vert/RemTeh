@@ -78,11 +78,14 @@
         }
 
     }
-    .yellow{
+    &.yellow{
         button,
-        a{border-color: #fffc00;
+        a{border-color: #fffc00; color: #000;
             p{
                 &:after{ background-color: #fffc00;}
+            }
+            &:hover {
+                p { color: #fffc00; }
             }
         }
     }
@@ -312,6 +315,7 @@
             }
         }
         .mobile{ display: none;
+
             .item{ margin: 0 auto 45px;  max-width: 526px; width: 100%; display: none;
                 &.active{display: block;}
             }
