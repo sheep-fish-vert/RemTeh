@@ -77,3 +77,40 @@
 		}
 	}
 }
+
+//kaktuz block
+.kaktuz{ background: url('../images/portal_bg.jpg');
+	.mbox{
+		header{
+			h2{
+				
+			}
+		}
+		.under-header{
+			
+		}
+		.kaktuz-form{
+		    .portal-form-wrap{display: flex;align-items: center;justify-content: center;padding-bottom: 20px;
+		        .item{
+		            &.item-2{width: 39%;
+		                .portal-form-wrap{max-width: 408px;margin:0 auto;
+		                    .portal-form-form{width: 100%;}
+		                    textarea{width: 100%;height: 123px;font-size: 21px;padding-left: 17px;padding-top: 18px;padding-bottom: 5px;color: #000000;border:1px solid #848484;    margin-bottom: 20px;resize:none;
+		                         &.error{border-color: red;}
+		                    }
+		                    input{display: block;width: 100%;height: 60px;font-size: 21px;padding-left: 17px;padding-top: 5px;padding-bottom: 5px;color: #000000;border:1px solid #848484;    margin-bottom: 7px;
+		                        &.error{border-color: red;}
+		                        &::-webkit-input-placeholder {color:#000000;}
+		                        &:-moz-placeholder {color:#000000;}
+		                        &::-moz-placeholder {color:#000000;}
+		                        &:-ms-input-placeholder {color:#000000;}
+		                    }
+		                    .errorText{display: none !important;}
+		                }
+		            }
+		        }
+		    }
+		}
+	}
+}
+//kaktuz block
