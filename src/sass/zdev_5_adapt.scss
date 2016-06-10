@@ -23,8 +23,10 @@
         }
     /*END header-----------------------------------------------*/
     /*menu-----------------------------------------------*/
+    .footer nav.desctop{ display: none;}
     nav{ height: auto;}
     .menu  { background-color: transparent;
+
        &.top{position: fixed; top: 0; left: 0; width: 100%;
            .mbox{ padding: 0;}
            .phone-block { display: none; }
@@ -107,7 +109,18 @@
                 }
             }
         }
-    /*END brends-----------------------------------------------*/
+    /*END brends------------------------------------------------*/
+    /*practics------------------------------------------------*/
+        .practics{
+            .desctop{ display: none;}
+            .mobile{ display: block;}
+            .title{
+                h2{font-size: 28px;}
+            }
+        }
+
+    /*END practics------------------------------------------------*/
+
 }
 @media screen and (max-width: 992px){
 
