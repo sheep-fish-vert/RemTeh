@@ -184,7 +184,7 @@ function popNext(popupId, popupWrap){
 
     timer = setTimeout(function(){
         $('form').trigger("reset");
-        $.fancybox.close(popupId);
+       /* $.fancybox.close(popupId);*/
     },2000);
 
 }

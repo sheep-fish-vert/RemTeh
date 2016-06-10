@@ -26,6 +26,17 @@
 }
 @media screen and (max-width: 992px){
 
+    #call-popup{ width: 320px; min-height: 0;
+        .contact-form { width: 100%;padding: 30px 5px;}
+    }
+
+    #call-popup .contact-form .contact-form-title { padding-bottom: 10px;
+        h5 {font-size: 34px;}
+    }
+    #call-popup .contact-form .button button { font: 400 35px/1.2 'Avantgarde';}
+    #call-popup .contact-form .contact-form-row input {height: 57px; font-size: 20px;}
+
+
 }
 @media screen and (max-width: 767px){
 
@@ -33,7 +44,7 @@
         .faq .bottom{padding-bottom: 30px;
             .title h2 {font-size: 27px; color: rgb(0, 0, 0);}
             ul { padding-top: 30px;
-                li {
+                li { 
                     .taba{font-size: 17px; padding-right: 20px;}
                     .taba:before { right: 9px;}
                     .descript {font-size: 14px; padding: 45px 18px; }
@@ -67,7 +78,7 @@
         }
         .bot-form .item-1 .subtitle {font-size: 27px; margin: 0; text-align: center;}
         
-        .portal-form .portal-form-wrap .item.item-1 a{     font: 400 21px/1.2 'Avantgarde' !important; margin: 0;
+        .portal-form .portal-form-wrap .item.item-1 a{     font: 400 21px/1.2 'Avantgarde' !important; margin-left: 0 !important; margin-right: 0 !important;
             img { width: 24px; margin-top: 10px; }
             b{font-size: 36px !important;}
         }
@@ -86,6 +97,19 @@
 
 }
 @media screen and (max-width: 479px){
+
+    #call-popup{ width: 280px; min-height: 0;
+        .contact-form { width: 100%;padding: 30px 5px;}
+    }
+    #call-popup .contact-form .contact-form-title h5 {
+        font-size: 29px;
+    }
+    #call-popup .contact-form .button button {
+        font: 400 30px/1.2 'Avantgarde';
+    }
+    #call-popup .contact-form .button button p {
+        padding-top: 15px;
+    }
 
 }
 @media screen and (max-width: 320px){

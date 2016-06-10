@@ -1,24 +1,24 @@
 .icon-list{ background: url('../images/icon-list-background.jpg') no-repeat; background-size: cover; background-position: 50% 0%; font-family: 'Avantgarde';
 	.mbox{padding: 60px 15px 0px;
-		.list-wrapper{ display: flex;justify-content: space-between; padding-top: 25px; 
+		.list-wrapper{ display: flex;justify-content: space-between; padding-top: 25px;
 			.left-list{width: 50%;padding :0px 0 0 35px;
-				table{ 
-					tr{transition: all 0.1s; min-height: 43px;max-height: 43px;
-						&.animate-delay{opacity: 0;	
+				table{
+					tr{transition: all ease-out 0.4s; min-height: 43px;max-height: 43px;
+						&.animate-delay{opacity: 0;
 						}
-						&.animated{opacity: 1;	
+						&.animated{opacity: 1;
 						}
 						&:hover{
 							td{
-								img{transform: scale(1.2);	transition: all 0.1s;								
+								img{transform: scale(1.2);	transition: all ease-out 0.4s;
 								}
-							}										
+							}
 						}
-						td{	
+						td{
 							&:first-child{text-align: center;padding: 0px 0px 0px 0px;
 								img{ }
 							}
-							&:last-child{padding: 20px 0 20px 15px; font-size: 19px; 
+							&:last-child{padding: 20px 0 20px 15px; font-size: 19px;
 								span{font-family: 'Avantgarde';display: inline-block;vertical-align: middle;
 								}
 							}
@@ -29,19 +29,19 @@
 			.right-list{width: 50%;padding :0px 0 0 95px;margin-top: -5px;
 				table{
 					tr{ transition: all 0.1s; min-height: 43px;
-						&.animate-delay{opacity: 0;	
+						&.animate-delay{opacity: 0;
 						}
-						&.animated{opacity: 1;	
+						&.animated{opacity: 1;
 						}
 						&:hover{
 							td{
-								img{transform: scale(1.2);	transform: scale(1.2);	transition: all 0.1s;									
+								img{transform: scale(1.2);	transform: scale(1.2);	transition: all 0.1s;
 								}
-							}										
+							}
 						}
-						td{	
+						td{
 							&:first-child{ text-align: center;
-								
+
 							}
 							&:last-child{padding: 21px 0 21px 15px; font-size: 19px;
 								span{display: inline-block; vertical-align: middle;
@@ -53,7 +53,7 @@
 			}
 		}
 		&>span{display: block; min-width: 36%; float: right; font-size: 16px; line-height: 1.7;}
-		
+
 		.low-text-conteiner{padding: 50px 0px 25px 0px; text-align: center;
 			p{font-size: 31px;}
 		}
@@ -62,9 +62,9 @@
 				tr{
 					&:hover{
 							td{
-								img{transform: scale(1.2);	transform: scale(1.2);	transition: all 0.1s;									
+								img{transform: scale(1.2);	transform: scale(1.2);	transition: all 0.1s;
 								}
-							}										
+							}
 						}
 					td{
 						&:first-child{text-align: center;padding: 0px 0 15px 0px;}
