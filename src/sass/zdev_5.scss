@@ -1,5 +1,13 @@
-/*header*/
-    .header-wrap { text-align: center; background-image: url(../images/bg-header.jpg); background-position: center top; background-repeat:no-repeat; min-height: 1005px; padding: 25px 0 0; background-size:cover;
+/*header-----------------------------------------------*/
+.phone-block {
+    a{font: 400 29px/1.2 'Avantgarde'; color: #000; text-decoration: none;
+        b{font-size: 50px; vertical-align: top;}
+        img{ vertical-align: top;    margin-top: 16px;}
+        span{ display: inline-block;    margin-top: 13px;}
+    }
+    .phone-row{    margin-bottom: 9px;}
+}
+    .header-wrap { text-align: center; background-image: url(../images/2.jpg); background-attachment:fixed; background-position: center top; background-repeat:no-repeat; min-height: 1005px; padding: 25px 0 0; background-size:cover;
         .phone-block {
             a{font: 400 29px/1.2 'Avantgarde'; color: #000; text-decoration: none;
                 b{font-size: 50px; vertical-align: top;}
@@ -10,6 +18,7 @@
         }
         .title-block { color: #000;display: block; margin: 244px auto 0; width: 100%; max-width: 1140px; background-color: rgba(255,255,0,0.87);font: 400 57px/56px 'Avantgarde'; position: relative; border-top: 3px solid red ; padding: 14px 5px 23px;
             p{ margin: 0;}
+            .subtitle{ font-size:40px;}
             &:after{ content:'';position: absolute; max-width: 964px; width: 100%; height: 9px; bottom: 0; left:50%; transform: translateX(-50%); background-color: #697478;}
             .action{ width: 259px; height: 244px; background-image: url(../images/bg-action.png);font: 400 22px/1 'Avantgarde'; color: #fff;padding: 126px 10px 10px 10px; position: absolute; bottom: -224px; z-index: 10; right: 72px; transform-origin: center top; transform: rotate(-5deg);
                 p{ margin: 0;
@@ -40,6 +49,9 @@
         }
         .errorText{ display: none!important;}
     }
+    .repair{
+        .header-wrap { background-image: url(../images/1.jpg);}
+    }
 @keyframes bounce {
     0%   {transform: rotate(-5deg);}
     12%  {transform: rotate(-1deg);}
@@ -48,7 +60,7 @@
     75%  {transform: rotate(-7deg);}
     100% {transform: rotate(-5deg);}
 }
-/*END header*/
+/*END header-----------------------------------------------*/
 .button{
     button,
     a{font: 400 46px/1.2 'Avantgarde'; color: #fff; text-decoration: none; border:3px solid #3dd0bd; padding: 2px; width: 100%; max-width: 408px; height: 88px; margin: 0 auto; background-color: transparent;
@@ -67,7 +79,8 @@
 
     }
 }
-/*menu*/
+/*menu-----------------------------------------------*/
+    nav{ height: 66px;}
     .menu  { height: 66px; background-color: #697276; width: 100%;z-index: 999;
         .mbox {max-width: 1270px;}
         .phone-block { float: left;padding-top: 11px;
@@ -108,8 +121,8 @@
             }
         }
     }
-/*END menu*/
-/*top-form*/
+/*END menu-----------------------------------------------*/
+/*top-form-----------------------------------------------*/
     .top-form{
         .top-form-wrap{ position: relative; background-image: url(../images/bg-topform.jpg); background-position: center bottom; background-size: cover; padding-top: 441px;    padding-bottom: 69px;}
         .triangle{font-family: 'Avantgarde'; font-weight: 400; line-height: 1.2; color: #000; text-align: center; background-image: url(../images/bg-triangle.png); min-height: 407px; width: 100%; background-position: center top; background-repeat: no-repeat; position: absolute; top: 0; left: 0; background-size: cover;    padding-top: 8px;
@@ -148,12 +161,17 @@
         }
 
     }
-/*END top-form*/
+/*END top-form-----------------------------------------------*/
 
 
-/*present*/
-    .present{ background-color: #fdfa1f;    padding-top: 22px;
+/*present-----------------------------------------------*/
+    .present{ background-color: #fdfa1f;    padding-top: 22px; overflow: hidden;
         p{ margin: 0;}
+        .mobile-box{ display: none; text-align: center;
+            p{ margin: 0;font: 400 25px/34px 'Avantgarde';color: #000;}
+            .metla{background-image: url(../images/ic-fix.png); width: 57px; height: 57px; display: inline-block;}
+            .bug{background-image: url(../images/ic-bug.png); width: 60px; height: 56px; display: inline-block;}
+        }
         .present-wrap{ position: relative;}
         .top-box{ color: #000; text-align: center;
             h2{font: 400 36px/1.2 'Avantgarde'; margin: 0;}
@@ -187,7 +205,7 @@
             .left-box{ color: #fff; top: 142px; padding-right: 138px;
                 p{max-width: 268px;}
                 &:before{ background-image: url(../images/ic-fix2.png); top: -8px; right: 407px;}
-                .arrow{ display: none;}
+                .arrow{display: none;}
             }
             .right-box{ color: #fff;top: 142px; padding-left: 138px;
                 p{ text-align: right;}
@@ -197,9 +215,55 @@
             .bottom-box{ color: #fff;
                 &:before{ background-image: url(../images/ic-present2.png);}
             }
+            .mobile-box{
+                p{ color: #fff;}
+                .metla{background-image: url(../images/ic-fix2.png); }
+                .bug{background-image: url(../images/ic-bug2.png);}
+            }
         }
     }
 
 
-/*END present*/
+/*END present-----------------------------------------------*/
+/*brends-----------------------------------------------*/
+    .brends{ background-image: url(../images/bg-brends.jpg); min-height: 920px; background-size:cover; background-repeat: no-repeat; background-position: center top;overflow: hidden;
+        .brends-wrap{
+            .title{ text-align: center;padding: 40px 0 190px;     position: relative;
+                z-index: 9;
+                h2{ margin: 0;font: 400 74px/1.2 'Avantgarde'; color: #000;}
+            }
+            .logo-wrap{ position: relative; width: 408px; height: 408px; margin: 0 auto;
+                .item { position: absolute; opacity: 0; transition: all 300ms;
+                    img{max-width: none;}
+                    &.animated { opacity: 1;}
+                }
+                .num01{    left: -622px;  top: -529px;}
+                .animated.num01{    left: -122px;  top: -29px;}
+                .num02{left: -340px; top: -599px;}
+                .animated.num02{left: -40px; top: -99px;}
+                .num03{ left: 102px; top: -618px;}
+                .animated.num03{ left: 102px; top: -118px;}
+                .num04{ left: 645px; top: -599px;}
+                .animated.num04{ left: 345px; top: -99px;}
+                .num05{ left: 907px; top: -326px;}
+                .animated.num05{ left: 407px; top: -26px;}
+                .num06{ left: 998px; top: 140px;}
+                .animated.num06{ left: 498px; top: 140px;}
+                .num07{ left: 896px; top: 646px;}
+                .animated.num07{ left: 396px; top: 346px;}
+                .num08{ left: 871px; top: 989px;}
+                .animated.num08{ left: 371px; top: 489px;}
+                .num09{ left: 64px; top: 975px;}
+                .animated.num09{ left: 64px; top: 475px;}
+                .num10{ left: -585px; top: 998px;}
+                .animated.num10{ left: -85px; top: 498px;}
+                .num11{ left: -652px; top: 615px;}
+                .animated.num11{ left: -152px; top: 315px;}
+                .num12{ left: -770px; top: 129px;}
+                .animated.num12{ left: -270px; top: 129px;}
+
+            }
+        }
+    }
+/*END brends-----------------------------------------------*/
 

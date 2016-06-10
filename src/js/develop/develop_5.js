@@ -14,8 +14,21 @@ function checkAdaptive() {
     return false;
 }
 
+function fixedMenu() {
+    $(window).scroll(function () {
+        var top = $(window).scrollTop();
+
+        if(top >= $('header').height()){
+
+            $('.menu.top').attr('style','position:fixed;top:0;left:0;');
+        }else{
+            $('.menu.top').removeAttr('style');
+        }
+    })
+}
 $(document).ready(function(){
     butterMenu();
+    fixedMenu();
 });
 
 $(window).load(function(){
