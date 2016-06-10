@@ -185,6 +185,7 @@
 }
 @media screen and (max-width: 666px){
     #call_success{width: 100%};
+    .fancybox-close{right: calc(50% - 9px); top: -18px;}
 }
 @media screen and (max-width: 479px){
     /*top-form-----------------------------------------------*/
