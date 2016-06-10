@@ -78,6 +78,14 @@
         }
 
     }
+    .yellow{
+        button,
+        a{border-color: #fffc00;
+            p{
+                &:after{ background-color: #fffc00;}
+            }
+        }
+    }
 }
 /*menu-----------------------------------------------*/
     nav{ height: 66px;}
@@ -118,6 +126,15 @@
                     &:before{transform: rotate(45deg);opacity: 1;}
                     &:after{transform: rotate(-45deg); opacity:1;}
                 }
+            }
+        }
+        &.bottom{ background-color: #fffc00;
+            .mbox{ padding: 0;}
+            li{
+                a{color: #000;
+                    &:hover{ color: #f00;}
+                }
+                &:after{ background-color: #000;}
             }
         }
     }
@@ -319,4 +336,11 @@
         }
     }
 /*END practics-----------------------------------------------*/
+/*footer-----------------------------------------------*/
+
+    .footer{
+
+    }
+
+/*END footer-----------------------------------------------*/
 
