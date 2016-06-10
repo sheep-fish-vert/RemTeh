@@ -46,9 +46,43 @@ $y:#fffc21;
         }
     }
     .read_post{padding-top: 55px;padding-bottom: 63px;
-        a{text-decoration: none;font-weight: 400;color: #000;display: flex;align-items: center;justify-content: center;}
+        a{text-decoration: none;font-weight: 400;color: #000;display: flex;align-items: center;justify-content: center;
+            &:hover{
+                span:after{opacity: 0;}
+            }
+        }
         span{font-size: 41px;position: relative;margin-right: 12px;display: inline-block;
             &:after{position: absolute;border-bottom: 2px dotted #000;content: '';width: 100%;left: 0px;bottom:-3px;}
+        }
+    }
+}
+.portal-form{
+    .portal-form-wrap{display: flex;align-items: center;justify-content: center;padding-bottom: 20px;
+        .item{
+            &.item-1{width: 50%;display: flex;flex-direction: column;margin-top: -21px;
+                a{font: 400 29px/1.2 'Avantgarde';color: #000;text-decoration: none;margin:0 16px;    margin-bottom: 20px;
+                    img{vertical-align: top;margin-top: 16px;}
+                    span {display: inline-block;margin-top: 13px;}
+                    b{font-size: 50px;vertical-align: top;font-weight: 500;}
+                }
+            }
+            &.item-2{width: 39%;
+                .portal-form-wrap{max-width: 408px;margin:0 auto;
+                    .portal-form-form{width: 100%;}
+                    textarea{width: 100%;height: 123px;font-size: 21px;padding-left: 17px;padding-top: 18px;padding-bottom: 5px;color: #000000;border:1px solid #848484;    margin-bottom: 20px;resize:none;
+                         &.error{border-color: red;}
+                    }
+                    input{display: block;width: 100%;height: 60px;font-size: 21px;padding-left: 17px;padding-top: 5px;padding-bottom: 5px;color: #000000;border:1px solid #848484;    margin-bottom: 7px;
+                        &.error{border-color: red;}
+                        &::-webkit-input-placeholder {color:#000000;}
+                        &:-moz-placeholder {color:#000000;}
+                        &::-moz-placeholder {color:#000000;}
+                        &:-ms-input-placeholder {color:#000000;}
+                    }
+                    .errorText{display: none !important;}
+                }
+
+            }
         }
     }
 }
