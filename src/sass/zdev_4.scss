@@ -81,7 +81,17 @@ $y:#fffc21;
                     }
                     .errorText{display: none !important;}
                 }
+            }
+        }
+    }
+}
 
+.footer-yellow{
+    .footer-yellow-wrap{max-width: 982px;margin:0 auto;height: 100px;display: flex;justify-content: space-between;align-items: center;padding-top: 9px;
+
+        .creator{margin-right: 20px;
+            a{display: flex;text-decoration: none;align-items: center;font-size: 17px;color: #000;
+                img{margin-left: 19px;}
             }
         }
     }
