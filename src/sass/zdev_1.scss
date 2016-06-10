@@ -1,0 +1,15 @@
+
+/* button-up */
+
+    .button-up{position: fixed;z-index: 10;right: 28px;bottom: 28px;cursor: pointer;opacity: 0;pointer-events:none;transition:all 300ms ease;
+        &.show{opacity:1;pointer-events:auto;}
+        img{transition:all 300ms ease;}
+        .button-up-hover{position: absolute;top:0;left:0;opacity: 0;}
+        &:hover{
+            img{opacity: 0;
+                &.button-up-hover{opacity: 1;}
+            }
+        }
+    }
+
+/* /button-up */
