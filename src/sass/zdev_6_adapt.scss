@@ -1,28 +1,6 @@
 @media screen and (max-width: 1920px){
-	.icon-list{
-		.mbox{
-		.list-wrapper{
-			.left-list{
-				ul{
-					li{
-						.img-wrap{
-							img{}
-						}
-						.text-conteiner{
-							p{}
-						}
-					}
-				}
-			}
-			.right-list{
-				
-			}
-		}
-		.low-text-contriner{
-			
-		}
-	}
-}
+	
+
 }
 @media screen and (max-width: 1600px){
 
@@ -37,7 +15,28 @@
 
 }
 @media screen and (max-width: 992px){
-
+	.kaktuz{
+		.mbox{
+			header{
+				h2{font-size: 38px;}
+			}
+			.kaktuz-form{padding-top: 320px;
+				.mbox{
+					.portal-form-wrap{
+						.item{
+							.portal-form-wrap{ margin: 0 auto;
+								
+							}
+						}
+					}
+				}
+			}
+			.image-wrapper{width: 100px; margin: 0 auto;position: relative;
+				img{ top: -770px; left: -260px; max-width: 626px; max-height: 458px;}
+			}
+		}	
+	}
+	
 }
 @media screen and (max-width: 767px){
 	.icon-list{
@@ -59,6 +58,16 @@
 		
 		}
 	}
+
+	.kaktuz{
+		.mbox{
+			
+			.image-wrapper{width: 100px; margin: 0 auto;position: relative;
+				img{ top: -750px; left: -260px; max-width: 626px; max-height: 458px;}
+			}
+		}	
+	}
+
 }
 @media screen and (max-width: 666px){
 
@@ -90,7 +99,49 @@
 			}
 		}
 	}
+
+	.kaktuz{
+		.mbox{
+			header{
+				h2{font-size: 38px;}
+			}
+			.kaktuz-form{padding-top: 320px;
+				.mbox{padding:0px;
+					.portal-form-wrap{padding-left:0px; 
+						.item{
+							.portal-form-wrap{ margin: 0 auto; padding-left:0px; 
+								
+							}
+						}
+					}
+				}
+			}
+			.image-wrapper{width: 100px; margin: 0 auto;position: relative;
+				img{ top: -750px; left: -320px; max-width: 626px; max-height: 458px;}
+			}
+		}	
+	}
 }
 @media screen and (max-width: 320px){
-
+	.kaktuz{
+		.mbox{
+			header{
+				h2{font-size: 38px;}
+			}
+			.kaktuz-form{padding-top: 320px;
+				.mbox{padding:0px;
+					.portal-form-wrap{padding-left:0px; 
+						.item{
+							.portal-form-wrap{ margin: 0 auto; padding-left:0px; 
+								
+							}
+						}
+					}
+				}
+			}
+			.image-wrapper{width: 100px; margin: 0 auto;position: relative;
+				img{ top: -750px; left: -360px; max-width: 626px; max-height: 458px;}
+			}
+		}	
+	}
 }

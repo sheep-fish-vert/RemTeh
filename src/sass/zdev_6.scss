@@ -81,7 +81,10 @@
 //kaktuz block
 .kaktuz{ background: url('../images/portal-bg.jpg'); font-family: 'Avantgarde';
 	.mbox{
-		header{
+		header{ transition: 1.5s;
+			&.animate-it{opacity: 0;
+			}
+			&.animated{opacity: 1;}
 			h2{text-align: center; font-family: 'Avantgarde'; font-size: 75px;margin-top: 20px; margin-bottom: 30px;
 				
 			}

@@ -271,7 +271,7 @@ $(document).ready(function(){
    validate('.portal-page .portal-form-form', {submitFunction:validationCall});
 
    validate('.bot-form .portal-form-form', {submitFunction:validationCall});
-   
+   validate('.kaktuz-form .portal-form-form', {submitFunction:validationCall});
    Maskedinput();
    fancyboxForm();
 
