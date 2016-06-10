@@ -12,13 +12,15 @@ $.scrollbarWidth=function(){var a,b,c;if(c===undefined){a=$('<div style="width:5
 /* scrollUp */
 function scrollUp(block,targetBlock) {
 
-    $(block).click(function(e){
+    $(document).on('click', block, function(e){
+
         var target = $(targetBlock).offset().top;
 
         $(scroller).stop().animate({scrollTop:target},800);
         return false;
 
         e.preventDefault();
+
     });
 }
 
@@ -163,6 +165,8 @@ $(document).ready(function() {
 
     //goTo();
     animationBlock($('.section-animate'));
+
+    scrollUp('.button-up.show', 'body');
 });
 
 $(window).resize(function() {
