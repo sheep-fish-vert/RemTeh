@@ -1,4 +1,54 @@
 // portal
-.portal-page{
-    .header-tel{min-height: 131px;}
+$y:#fffc21;
+.portal-page{background:#fff url('../images/portal-bg.jpg') left top;
+    .header-tel{min-height: 131px;display: flex;justify-content: center;padding-top: 33px;
+        a{font: 400 29px/1.2 'Avantgarde';color: #000;text-decoration: none;margin:0 16px;
+            img{vertical-align: top;margin-top: 16px;}
+            span {display: inline-block;margin-top: 13px;}
+            b{font-size: 50px;vertical-align: top;font-weight: 500;}
+        }
+    }
+    .portal-ellow{background-color: $y;border-top: 3px solid #e01c30;
+        .mbox{border-bottom: 9px solid  #697478;min-height: 160px;text-align: center;
+            &:after{display: none;}
+            .title{
+                h1{margin: 0;font-size: 66px;line-height: 41px;color: #010101;padding-top: 11px;font-weight: 200;
+                    span{font-size: 37px;line-height: 31px;font-weight: 300;}
+                }
+            }
+        }
+    }
+    .portal-two-image-wrap{display: flex;justify-content:space-around;align-content: center;color: #010101;padding-top: 13px;
+        .item{width: 49%;
+            &:nth-child(1){
+                .item-title{max-width: 439px;margin: 0 auto;}
+                .item-image:after{background:transparent url('../images/portal-two-shadow-1.png') right top no-repeat;}
+            }
+        }
+        .item-title{text-align: center;font-size: 31px;line-height: 43px;
+            p{margin-bottom:13px;}
+        }
+        .item-image{position: relative;
+            &:after{content: '';height: 45px;width: 100%;position: absolute;left: 0;top: 100%;background:transparent url('../images/portal-two-shadow-2.png') left top no-repeat;}
+            img{border:9px solid #7a7a78;border-radius: 5px;}
+            .button{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);text-align: center;
+                button{width: 311px;}
+                a{display: inline-block;width: 311px;height: 67px;font-size: 41px;color: #010101;border-color: $y;
+                    &:hover{
+                        p{color: #e01c30;}
+                    }
+                    p{padding-top: 0;
+                        &:after{background-color: $y;}
+                    }
+
+                }
+            }
+        }
+    }
+    .read_post{padding-top: 55px;padding-bottom: 63px;
+        a{text-decoration: none;font-weight: 400;color: #000;display: flex;align-items: center;justify-content: center;}
+        span{font-size: 41px;position: relative;margin-right: 12px;display: inline-block;
+            &:after{position: absolute;border-bottom: 2px dotted #000;content: '';width: 100%;left: 0px;bottom:-3px;}
+        }
+    }
 }
