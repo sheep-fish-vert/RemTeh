@@ -65,7 +65,7 @@
     button,
     a{font: 400 46px/1.2 'Avantgarde'; color: #fff; text-decoration: none; border:3px solid #3dd0bd; padding: 2px; width: 100%; max-width: 408px; height: 88px; margin: 0 auto; background-color: transparent;
         p{ width: 100%; height: 100%;  margin: 0; position: relative; background-color: transparent; overflow: hidden; transition:all 300ms; z-index:5; padding-top: 9px;
-            &:before{ content: ''; display: block; position: absolute; width: 100%; height: 100%; background-color: #fff; top: 0; left: -100%; z-index: 0;transition:all 300ms;}
+            &:before{ content: ''; display: block; position: absolute; width: 100%; height: 100%; background-color: transparent; top: 0; left: -100%; z-index: 0;transition:all 300ms;}
             &:after{ content: ''; display: block; position: absolute; width: 100%; height: 100%; background-color: #3dd0bd; top: 0; left: 0;z-index: 0;transition:all 300ms;}
             span{z-index: 10; position: relative;}
 
@@ -77,6 +77,17 @@
             }
         }
 
+    }
+    &.yellow{
+        button,
+        a{border-color: #fffc00; color: #000;
+            p{
+                &:after{ background-color: #fffc00;}
+            }
+            &:hover {
+                p { color: #fffc00; }
+            }
+        }
     }
 }
 /*menu-----------------------------------------------*/
@@ -118,6 +129,15 @@
                     &:before{transform: rotate(45deg);opacity: 1;}
                     &:after{transform: rotate(-45deg); opacity:1;}
                 }
+            }
+        }
+        &.bottom{ background-color: #fffc00;
+            .mbox{ padding: 0;}
+            li{
+                a{color: #000;
+                    &:hover{ color: #f00;}
+                }
+                &:after{ background-color: #000;}
             }
         }
     }
@@ -295,6 +315,7 @@
             }
         }
         .mobile{ display: none;
+
             .item{ margin: 0 auto 45px;  max-width: 526px; width: 100%; display: none;
                 &.active{display: block;}
             }
@@ -319,4 +340,10 @@
         }
     }
 /*END practics-----------------------------------------------*/
-
+#call_success{ background-color: #fffc00; width:586px; padding: 40px 10px; height: 100%; text-align: center; font: 400 44px/1.2 'Avantgarde'; color: #000; }
+.fancybox-close{ width: 18px; height: 18px; right: -32px; top: 0px;
+    &:before,
+    &:after{ content: ''; width: 25px; height: 1px; background-color: #fff; display: block; position: absolute; top: 9px; left: 0;transition: all 400ms;}
+    &:before{transform: rotate(45deg);}
+    &:after{transform: rotate(-45deg);}
+}

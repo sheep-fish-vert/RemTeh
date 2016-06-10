@@ -9,6 +9,30 @@
 }
 @media screen and (max-width: 1280px){
 
+    /* map */
+
+        .map{
+            .man-block{
+                .man-text{font-size: 36px;padding:15px 0 20px 130px;}
+            }
+        }
+
+    /* map */
+
+}
+@media screen and (max-width: 1170px){
+
+    /* map */
+
+        .map{padding-bottom: 200px;
+            .man-block{bottom: -200px;
+                .man-img{max-width: 400px;}
+                .man-text{font-size: 30px;padding:15px 0 20px 170px;}
+            }
+        }
+
+    /* /map */
+
 }
 @media screen and (max-width: 1024px){
 
@@ -21,8 +45,52 @@
 }
 @media screen and (max-width: 992px){
 
+    /* map */
+
+        .map{padding-bottom: 0;
+            .map-block{padding-bottom: 0;}
+            .img-block{
+                .minsk-map{display: none;}
+            }
+            .man-block{position: static;display: block;margin-left: 0;border-bottom: 1px solid #d8d94b;
+                .man-img{margin: 0 auto;max-width: none;text-align: center;}
+                .man-text{margin: 0;text-align: center;font-size: 24px;padding:20px 0 25px;
+
+                }
+            }
+        }
+
+    /* /map */
+
 }
 @media screen and (max-width: 767px){
+
+    /* map */
+
+        .map{
+            .img-block{
+                .point-block{width: 265px;height: 361px;background-size:265px 361px;padding-top: 35px;background-image:url(../images/point-background-mobile.png);margin-bottom: 20px;
+                    .point-text1{font-size: 27px;margin-bottom: 5px;}
+                    .point-text2{font-size: 20px;margin-bottom: 3px;}
+                    .point-text3{font-size: 30px;width: 86px;height: 87px;left:calc(50% - 48px);}
+                    .point-text4{font-size: 40px;margin-bottom: 5px;
+                        span{font-size: 13px;}
+                    }
+                    .point-text5{font-size: 25px;margin-bottom: 5px;}
+                    .point-text6{font-size: 25px;}
+                }
+            }
+
+            .garanty-text{font-size: 30px;flex-wrap:wrap;
+                span{display: flex;align-items: center;width: 100%;justify-content: center;margin-bottom: 10px;
+                    &:last-child{margin-bottom: 0;}
+                    img{max-width:64px;}
+                }
+            }
+
+        }
+
+    /* /map */
 
 }
 @media screen and (max-width: 666px){
