@@ -48,6 +48,7 @@
     /* map */
 
         .map{padding-bottom: 0;
+            &:after{display: none;}
             .map-block{padding-bottom: 0;}
             .img-block{
                 .minsk-map{display: none;}

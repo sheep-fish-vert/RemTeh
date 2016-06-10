@@ -16,10 +16,11 @@
 
 /* map */
 
-    .map{font-family: 'Avantgarde', sans-serif;background-image:url(../images/portal-bg.jpg);position: relative;padding-bottom: 300px;overflow: hidden;
+    .map{font-family: 'Avantgarde', sans-serif;background-image:url(../images/portal-bg.jpg);position: relative;padding-bottom: 300px;overflow: hidden;z-index: 2;margin-bottom: -60px;
+        &:after{content:'';display: block;position: absolute;bottom:0;left:0;height: 15px;width: 100%;background-image: url(../images/map-shadow.png);background-repeat: repeat-x;}
         .map-block{background-image:url(../images/map-fone.jpg);background-size: cover;position:relative;padding-bottom: 20px;}
         .img-block{display: flex;align-items: flex-start;justify-content: center;padding-top: 70px;
-            .minsk-map{width: calc(100% - 468px);}
+            .minsk-map{width: calc(100% - 468px);max-width: 772px;}
             .point-block{width: 468px;height: 623px;position: relative;background-image:url(../images/point-background.png);text-align: center;padding-top:55px;
                 &>div{position: relative;}
                 .point-text1{font-size: 47px;margin-bottom: 10px;}
@@ -32,10 +33,16 @@
                 .point-text6{font-size: 37px;}
             }
         }
-        .garanty-text{display: flex;justify-content: center;align-items: center;font-size: 52px;}
+        .garanty-text{display: flex;justify-content: center;align-items: center;font-size: 52px;
+            span{display: flex;align-items: center;margin-left: 15px;
+                &:first-child{margin-left: 0;}
+            }
+        }
 
         .man-block{position: absolute;bottom:-300px;left: 0;width: 100%;display: flex;align-items: center;justify-content: center;margin-left: -190px;
-            .man-img{position: relative;z-index: 2;}
+            .man-img{position: relative;z-index: 2;
+                &:after{content:'';display: block;position: absolute;width: 627px;height: 64px;background-image: url(../images/nagiev-shadow.png);left:0;top:100%;}
+            }
             .man-text{font-size: 54px;position: relative;z-index: 1;padding:10px 0 20px 130px;margin:0 0 -140px -190px;
                 &:before, &:after{content:'';display: block;position: absolute;width: 9999px;height: 10px;background-color: #fffd33;left:0;}
                 &:before{top:0;}
