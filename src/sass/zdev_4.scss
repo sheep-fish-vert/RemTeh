@@ -2,6 +2,9 @@
 $y:#fffc21;
 .portal-page{background:#fff url('../images/portal-bg.jpg') left top;
     .header-tel{min-height: 131px;display: flex;justify-content: center;padding-top: 33px;
+        &.animate-it{transition:all ease .4s;opacity: 0;
+            &.animated{opacity: 1;}
+        }
         a{font: 400 29px/1.2 'Avantgarde';color: #000;text-decoration: none;margin:0 16px;
             img{vertical-align: top;margin-top: 16px;}
             span {display: inline-block;margin-top: 13px;}
@@ -12,6 +15,9 @@ $y:#fffc21;
         .mbox{border-bottom: 9px solid  #697478;min-height: 160px;text-align: center;
             &:after{display: none;}
             .title{
+                &.animate-it{transition:all ease .4s;opacity: 0;
+                    &.animated{opacity: 1;}
+                }
                 h1{margin: 0;font-size: 66px;line-height: 41px;color: #010101;padding-top: 11px;font-weight: 200;
                     span{font-size: 37px;line-height: 31px;font-weight: 300;}
                 }
@@ -20,6 +26,9 @@ $y:#fffc21;
     }
     .portal-two-image-wrap{display: flex;justify-content:space-around;align-content: center;color: #010101;padding-top: 13px;
         .item{width: 49%;
+            &.animate-delay{transition:all ease .4s;opacity: 0;
+                &.animated{opacity: 1;}
+            }
             &:nth-child(1){
                 .item-title{max-width: 439px;margin: 0 auto;}
                 .item-image:after{background:transparent url('../images/portal-two-shadow-1.png') right top no-repeat;}
@@ -46,6 +55,9 @@ $y:#fffc21;
         }
     }
     .read_post{padding-top: 55px;padding-bottom: 63px;
+        &.animate-delay{transition:all ease .4s;opacity: 0;
+            &.animated{opacity: 1;}
+        }
         a{text-decoration: none;font-weight: 400;color: #000;display: flex;align-items: center;justify-content: center;
             &:hover{
                 span:after{opacity: 0;}
@@ -59,6 +71,9 @@ $y:#fffc21;
 .portal-form{
     .portal-form-wrap{display: flex;align-items: center;justify-content: center;padding-bottom: 20px;
         .item{
+            &.animate-delay{transition:all ease .4s;opacity: 0;
+                &.animated{opacity: 1;}
+            }
             &.item-1{width: 50%;display: flex;flex-direction: column;margin-top: -21px;
                 a{font: 400 29px/1.2 'Avantgarde';color: #000;text-decoration: none;margin:0 16px;    margin-bottom: 20px;
                     img{vertical-align: top;margin-top: 16px;}
