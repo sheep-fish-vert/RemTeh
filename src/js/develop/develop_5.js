@@ -26,9 +26,25 @@ function fixedMenu() {
         }
     })
 }
+function clickOnClick() {
+    $('.click').click(function () {
+        var ind =0;
+        $('.practitcs-wrap.mobile .item').each(function () {
+            $(this).slideDown();
+            ind++;
+            slide($('.practitcs-wrap.mobile .item').eq(ind));
+        });
+        function slide(block) {
+            var box =block;
+            setTimeout(function () { box.slideDown();  },400);
+        }
+        $(this).remove();
+    });
+}
 $(document).ready(function(){
     butterMenu();
     fixedMenu();
+    clickOnClick();
 });
 
 $(window).load(function(){

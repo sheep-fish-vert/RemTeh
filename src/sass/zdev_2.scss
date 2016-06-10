@@ -26,3 +26,40 @@
     }
 
 /* faq */
+
+/* bot-form  */
+
+    .bot-form {background-image: url(../images/bot-form-bg.jpg); background-size: cover;
+        .title{ padding-top: 45px; padding-bottom: 80px;
+            h2{margin: 0; font-size: 63px; color: rgb(255, 255, 255);   line-height: 1; text-align: center; font-family: "Avantgarde"; font-weight: 400; }
+        }
+        .item-1{
+            .subtitle{text-align: center; font-size: 44px; font-family: "Avantgarde"; color: rgb(255, 255, 255); line-height: 1.568;}
+        }
+        .item.item-1 a{color: white !important; display: block;}
+        .portal-form-wrap .item.item-1 a { font: 400 36px/1.2 'Avantgarde' !important;
+            b {font-size: 62px !important;}
+        }
+        .portal-form-wrap .item.item-2 .portal-form-wrap{
+             input, textarea { background-color: transparent; border-color: white !important; border-width: 2px !important; color: white !important;
+                
+                &::-webkit-input-placeholder {color:white !important; }
+                &:-moz-placeholder {color:white !important;opacity:1 ;}
+                &::-moz-placeholder {color:white !important;opacity:1;}
+                &:-ms-input-placeholder {color:white !important;}
+
+                &.error{ border-color: red !important; 
+                    &::-webkit-input-placeholder {color:red !important; }
+                    &:-moz-placeholder {color:red !important;opacity:1 ;}
+                    &::-moz-placeholder {color:red !important;opacity:1;}
+                    &:-ms-input-placeholder {color:red !important;}
+                }
+             } 
+        }
+        .button button, .button a{border-color: #fffd33; color: black; }
+        .button button p:after, .button a p:after { background-color: #fffd33;}
+        .button button p:before, .button a p:before{background-color: transparent;}
+    }
+
+
+/* bot-form  */

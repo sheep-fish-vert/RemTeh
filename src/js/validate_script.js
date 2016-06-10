@@ -268,7 +268,10 @@ $(document).ready(function(){
    validate('#call-popup .contact-form', {submitFunction:validationCall});
    validate('.tel-form', {submitFunction:validationCall});
    validate('.tel-form2', {submitFunction:validationCall});
-   validate('.portal-form-form', {submitFunction:validationCall});
+   validate('.portal-page .portal-form-form', {submitFunction:validationCall});
+
+   validate('.bot-form .portal-form-form', {submitFunction:validationCall});
+   
    Maskedinput();
    fancyboxForm();
 
