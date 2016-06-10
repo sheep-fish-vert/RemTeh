@@ -8,7 +8,7 @@
 
 }
 @media screen and (max-width: 1280px){
-    /*menu*/
+    /*menu-----------------------------------------------*/
     .menu  { text-align: center;
         .phone-block { display: none; }
         ul{ display: inline-block; float: none; padding-left: 0;}
@@ -16,13 +16,14 @@
     }
 }
 @media screen and (max-width: 1024px){
-    /*header*/
-        .header-wrap{ padding: 51px 0 0;
+    /*header-----------------------------------------------*/
+        .header-wrap{ padding: 51px 0 0; background-image: url(../images/bg-header.jpg); background-position: center top;
             .title-block{margin: 25px auto 0;}
             .form-block{ margin-top:226px;}
         }
-    /*END header*/
-    /*menu*/
+    /*END header-----------------------------------------------*/
+    /*menu-----------------------------------------------*/
+    nav{ height: auto;}
     .menu  { background-color: transparent;
        &.top{position: fixed; top: 0; left: 0; width: 100%;
            .mbox{ padding: 0;}
@@ -42,8 +43,8 @@
         .butter{ display: block;}
 
     }
-    /*END menu*/
-    /*top-form*/
+    /*END menu------------------------------------------------*/
+    /*top-form------------------------------------------------*/
         .top-form{
             .top-form-wrap{ padding-top: 0;}
             .form-wrap{border: none;
@@ -56,13 +57,63 @@
                 .arrow{font-size:20px;}
             }
         }
-    /*END top-form*/
+    /*END top-form-----------------------------------------------*/
+    /*presents-----------------------------------------------*/
+        .present{
+            .left-box{ display: none; }
+            .right-box{ display: none;}
+            .mobile-box{ display: block;}
+            .bottom-box{padding: 104px 0 112px;}
+        }
+
+    /*END presents-----------------------------------------------*/
+    /*brends-----------------------------------------------*/
+        .brends{ background-image: none; background-color: #f7f7f7; min-height: 1px;
+            .brends-wrap{
+                .title{    padding: 14px 0 0;
+                   h2{ font-size: 22px;}
+                }
+                .logo-wrap{ width: 320px; height: 310px; background-image: url(../images/bg-brends-mobile.jpg); background-size:cover; background-position: center; background-repeat: no-repeat; margin-top: -43px;
+                            .num01 img{ width:42px;}
+                            .num02 img{ width:35px;}
+                            .num03 img{ width:60px;}
+                            .num04 img{ width:35px;}
+                            .num05 img{ width:40px;}
+                            .num06 img{ width:64px;}
+                            .num07 img{ width:71px;}
+                            .num08 img{ width:27px;}
+                            .num09 img{ width:94px;}
+                            .num10 img{ width:41px;}
+                            .num11 img{ width:49px;}
+                            .num12 img{ width:60px;}
+
+                    .num06{ left: 102px; top: -618px;}
+                    .num03{ left: 998px; top: 140px;}
+
+                    .animated.num01{ left: 50px; top: 98px;}
+                    .animated.num02{ left: 78px; top: 66px;}
+                    .animated.num03{ left: 251px; top: 163px;}
+                    .animated.num04{ left: 208px;   top: 67px;}
+                    .animated.num05{ left: 229px;                        top: 100px;}
+                    .animated.num06{     left: 128px;                        top: 59px;}
+                    .animated.num07{ left: 224px;                        top: 225px;}
+                    .animated.num08{ left: 217px;                        top: 272px;}
+                    .animated.num09{     left: 113px;                        top: 268px;}
+                    .animated.num10{left: 63px;                        top: 269px;}
+                    .animated.num11{     left: 40px;                        top: 214px;}
+                    .animated.num12{        left: 3px;          top: 152px;}
+
+
+                }
+            }
+        }
+    /*END brends-----------------------------------------------*/
 }
 @media screen and (max-width: 992px){
 
 }
 @media screen and (max-width: 767px){
-    /*header*/
+    /*header-----------------------------------------------*/
         .header-wrap {min-height: 1px; background-image: none;    padding: 51px 0 0;
             .phone-block {    padding-bottom: 11px;
                 a { font: 400 22px/1.2 'Avantgarde';
@@ -104,7 +155,7 @@
         75%  {transform: rotate(-7deg) scale(0.7);}
         100% {transform: rotate(-5deg) scale(0.7);}
     }
-    /*END header*/
+    /*END header-----------------------------------------------*/
     .button {
         button,
         a { font: 400 35px/1.2 'Avantgarde'; height: 69px;}
@@ -114,20 +165,39 @@
 
 }
 @media screen and (max-width: 479px){
-    .top-form {
-        .form-wrap {padding-top: 0; padding-bottom: 20px;
-            .form-title{ font-size:25px; padding-bottom:20px;}
-            .form_input{ margin-bottom: 4px;
-                &.half{ width: 100%; margin-right: 0;}
+    /*top-form-----------------------------------------------*/
+        .top-form {
+            .form-wrap {padding-top: 0; padding-bottom: 20px;
+                .form-title{ font-size:25px; padding-bottom:20px;}
+                .form_input{ margin-bottom: 4px;
+                    &.half{ width: 100%; margin-right: 0;}
+                }
+                .form_row{ display: block;}
+                .button{ position: relative; left: auto; bottom: auto; transform: translateX(0); padding: 0;}
             }
-            .form_row{ display: block;}
-            .button{ position: relative; left: auto; bottom: auto; transform: translateX(0); padding: 0;}
+            .triangle{
+                h3{padding: 5px 0 0px;}
+                &:before{ background-size:cover; width: 31px; height: 37px;   bottom: 22px;}
+            }
         }
-        .triangle{
-            h3{padding: 5px 0 0px;}
-            &:before{ background-size:cover; width: 31px; height: 37px;   bottom: 22px;}
+    /*END topform-----------------------------------------------*/
+    /*present-----------------------------------------------*/
+        .present{ padding-top: 10px;
+            .top-box{
+                h2{ font-size: 24px;}
+                p{ font-size: 45px; line-height: 37px;}
+            }
+            .mobile-box{ padding-top: 9px;
+                p{ font: 400 20px/27px 'Avantgarde';}
+                .metla{width: 44px; height: 44px; background-size:cover;}
+                .bug{ width: 43px; height: 41px; background-size:cover;}
+            }
+            .bottom-box{    padding: 98px 0 46px;
+                &:before{ top: 13px;}
+                &:after{    bottom: 10px;}
+            }
         }
-    }
+    /*END present-----------------------------------------------*/
 }
 @media screen and (max-width: 320px){
 
