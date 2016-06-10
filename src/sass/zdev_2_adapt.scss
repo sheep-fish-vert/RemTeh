@@ -11,12 +11,37 @@
 
 }
 @media screen and (max-width: 1024px){
-
+    .faq .mbox {padding: 0;}
 }
 @media screen and (max-width: 992px){
 
 }
 @media screen and (max-width: 767px){
+
+    /* faq */
+        .faq .bottom{padding-bottom: 30px;
+            .title h2 {font-size: 27px; color: rgb(0, 0, 0);}
+            ul { padding-top: 30px;
+                li {
+                    .taba{font-size: 17px; padding-right: 20px;}
+                    .taba:before { right: 9px;}
+                    .descript {font-size: 14px; padding: 45px 18px; }
+                }
+            }
+        }
+
+        .faq{
+            .phone-block .phone-row{
+                a{ font-size: 21px;
+                    img {margin-top: 3px;}
+                    span {margin-top: 7px;}
+                    b{font-size: 37px;}
+
+                }
+            }
+        }
+    /* faq */
+
 
 }
 @media screen and (max-width: 666px){
