@@ -35,7 +35,7 @@
 
 /* bot-form  */
 
-    .bot-form {background-image: url(../images/3.jpg); background-attachment: fixed;
+    .bot-form {background-image: url(../images/3.jpg); background-attachment: fixed;background-position: center bottom;
         .title{ padding-top: 45px; padding-bottom: 80px;
             h2{margin: 0; font-size: 63px; color: rgb(255, 255, 255);   line-height: 1; text-align: center; font-family: "Avantgarde"; font-weight: 400; }
         }
@@ -62,9 +62,7 @@
                 }
              }
         }
-        .button button, .button a{border-color: #fffd33; color: black; }
-        .button button p:after, .button a p:after { background-color: #fffd33;}
-        .button button p:before, .button a p:before{background-color: transparent;}
+
     }
 
 
@@ -95,16 +93,7 @@
                 .errorText{display: none !important;}
 
             }
-            .button button{ font: 400 38px/1.2 'Avantgarde'; height: 80px;
-                p { padding-top: 10px;
-                    span{transition:  all 0.3s; }
-                }
-            }
-            .button button p:before, .button a p:before { background-color: transparent;}
 
-            .button button:hover{
-                p span{color: black;}
-            }
         }
 
     }

@@ -210,6 +210,7 @@ function fancyboxForm(){
   })
 }
 
+
 //ajax func for programmer
 
 function someAjax(item, someUrl, successFunc, someData){
