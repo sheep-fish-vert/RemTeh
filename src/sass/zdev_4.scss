@@ -1,6 +1,6 @@
 // portal
 $y:#fffc21;
-.portal-page{background:#fff url('../images/portal-bg.jpg') left top;
+.portal-page{background:#fff url('../images/portal-bg.jpg') left top; font-family:'Avantgarde';
     .header-tel{min-height: 131px;display: flex;justify-content: center;padding-top: 33px;
         &.animate-it{transition:all ease .4s;opacity: 0;
             &.animated{opacity: 1;}
@@ -42,14 +42,8 @@ $y:#fffc21;
             img{border:9px solid #7a7a78;border-radius: 5px;}
             .button{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);text-align: center;
                 button{width: 311px;}
-                a{display: inline-block;width: 311px;height: 67px;font-size: 41px;color: #010101;border-color: $y;
-                    &:hover{
-                        p{color: #e01c30;}
-                    }
-                    p{padding-top: 0;
-                        &:after{background-color: $y;}
-                    }
-
+                a{display: inline-block;width: 311px;height: 67px;font-size: 41px;
+                    p{padding-top: 0;}
                 }
             }
         }
