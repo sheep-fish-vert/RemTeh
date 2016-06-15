@@ -190,6 +190,7 @@
 @media screen and (max-width: 479px){
     /*top-form-----------------------------------------------*/
         .top-form {
+            .top-form-bg{padding-top: 0;}
             .form-wrap {padding-top: 0; padding-bottom: 20px;
                 .form-title{ font-size:25px; padding-bottom:20px;}
                 .form_input{ margin-bottom: 4px;
@@ -221,6 +222,12 @@
             }
         }
     /*END present-----------------------------------------------*/
+
+    // header
+    .header-wrap .form-block input{max-height: 58px;}
+
+    // map
+    .map .img-block{padding-top: 40px;}
 }
 @media screen and (max-width: 320px){
 
