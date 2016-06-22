@@ -172,9 +172,13 @@ function popNext(popupId, popupWrap){
 
     $.fancybox.open(popupId,{
         padding:0,
-        fitToView:false,
         wrapCSS:popupWrap,
         autoSize:true,
+        openEffect  : 'fade',
+        closeEffect : 'fade',
+        autoResize:true,
+        'closeBtn' : true,
+        fitToView:true,
         afterClose: function(){
             $('form').trigger("reset");
             clearTimeout(timer);
@@ -187,7 +191,6 @@ function popNext(popupId, popupWrap){
         $('form').trigger("reset");
        /* $.fancybox.close(popupId);*/
     },2000);
-
 }
 
 
