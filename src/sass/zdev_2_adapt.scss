@@ -55,6 +55,11 @@
         .faq{
             .phone-block .phone-row{
                 a{ font-size: 21px;
+                 &:last-child{
+                     img{margin: 0; width: 33px;
+                         
+                     }
+                 }
                     img {margin-top: 3px;}
                     span {margin-top: 7px;}
                     b{font-size: 37px;}
@@ -78,8 +83,12 @@
         }
         .bot-form .item-1 .subtitle {font-size: 27px; margin: 0; text-align: center;}
         
-        .portal-form .portal-form-wrap .item.item-1 a{     font: 400 21px/1.2 'Avantgarde' !important; margin-left: 0 !important; margin-right: 0 !important;
-            img { width: 24px; margin-top: 10px; }
+        .portal-form .portal-form-wrap .item.item-1 .contein a{  font: 400 21px/1.2 'Avantgarde' !important; margin-left: 0 !important; margin-right: 0 !important;
+            &:last-child{
+                img{margin-right: 0px!important;
+                }
+            }
+            img { width: 33px; margin-top: 10px; }
             b{font-size: 36px !important;}
         }
         .bot-form .mbox{padding: 0;}

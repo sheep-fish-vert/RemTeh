@@ -5,16 +5,28 @@
         img{ vertical-align: top;    margin-top: 16px;}
         span{ display: inline-block;    margin-top: 13px;}
     }
-    .phone-row{    margin-bottom: 9px;}
+    .phone-row{ margin-bottom: 9px;
+        &:nth-child(2){
+                    a{
+                        img{ margin-right: 11px; }
+                    }
+                }
+    }
 }
     .header-wrap { text-align: center; background-image: url(../images/2.jpg); background-attachment:fixed; background-position: center top; background-repeat:no-repeat; min-height: 1005px; padding: 25px 0 0; background-size:cover;
         .phone-block {
             a{font: 400 29px/1.2 'Avantgarde'; color: #000; text-decoration: none;
                 b{font-size: 50px; vertical-align: top;}
-                img{ vertical-align: top;    margin-top: 16px;}
+                img{ vertical-align: top;    margin-top: 16px; }
                 span{ display: inline-block;    margin-top: 13px;}
             }
-            .phone-row{    margin-bottom: 9px;}
+            .phone-row{    margin-bottom: 9px;
+                &:nth-child(2){
+                    a{
+                        img{ margin-right: 11px; }
+                    }
+                }
+            }
         }
         .title-block { color: #000;display: block; margin: 244px auto 0; width: 100%; max-width: 1140px; background-color: rgba(255,255,0,0.87);font: 400 57px/56px 'Avantgarde'; position: relative; border-top: 3px solid red ; padding: 14px 5px 23px;
             p{ margin: 0;}
@@ -103,6 +115,11 @@
             .phone-row{ margin-bottom: 6px;
                 &:first-child{
                     img{ width: 20px;margin-top: 3px;margin-right: 1px;}
+                }
+                &:nth-child(2){
+                    a{
+                        img{ margin-right: 11px; }
+                    }
                 }
             }
         }

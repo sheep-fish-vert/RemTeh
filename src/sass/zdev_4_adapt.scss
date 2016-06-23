@@ -17,7 +17,7 @@
     //portal
     .portal-page .portal-ellow .mbox .title h1{line-height: 50px;padding-top: 20px;padding-bottom: 15px;}
     .portal-page .header-tel a,.portal-form .portal-form-wrap .item.item-1 a{font-size: 24px;}
-    .portal-page .header-tel a b,.portal-form .portal-form-wrap .item.item-1 a b{font-size: 45px;}
+    .portal-page .header-tel a b,.portal-form .portal-form-wrap .item.item-1 a b{font-size: 35px;}
     .portal-page .header-tel a img,.portal-form .portal-form-wrap .item.item-1 a img{margin-top: 11px;}
 }
 @media screen and (max-width: 992px){
@@ -27,6 +27,11 @@
     .portal-page{
         .header-tel{padding-top: 0px;flex-direction: column;align-items: center;min-height: 128px;
             a{font-size: 21px;
+            &:last-child{
+                img{margin-right: 10px;
+                    
+                }
+            }
                 img{margin-top: 6px;}
                 span {margin-top: 9px;}
                 b{font-size: 37px;}
@@ -60,13 +65,23 @@
 
 }
 @media screen and (max-width: 666px){
-
+    .portal-page{
+        .portal-form-wrap{
+            .item.item-1{width: 85%;}
+            
+        }
+    }
 }
 @media screen and (max-width: 479px){
         .portal-page{
             .header-portal .mbox{padding: 0 6px;}
             .header-tel{justify-content: flex-start;padding-top: 13px;align-items: center;
                 a{margin: 0 2px;margin-bottom: 9px;text-align: center;
+                    
+                        &:last-child{
+                            img{margin-right: 0px;}                            
+                        }
+                    
                     img{max-width: 34px;}
                     b{font-size: 35px;}
                 }
@@ -102,9 +117,12 @@
             .portal-form .mbox{padding: 0 6px;}
             .portal-form-wrap{padding-bottom: 14px;
                 .item.item-1{width: 100%;
-                    a{margin: 0 0px;margin-bottom: 14px;font-size: 21px;text-align: center;
+                    a{margin: 0 0px;margin-bottom: 14px;font-size: 21px;text-align: center;  
+                         &:last-child{
+                            img{margin-right: 0px;}                            
+                        }                   
                         img{max-width: 34px;margin-top: 7px;}
-                        b{font-size: 35px;}
+                        b{font-size: 35px!important;}
                     }
                 }
                 .item.item-2{width: 100%;padding-top: 35px;

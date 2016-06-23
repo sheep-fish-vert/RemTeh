@@ -191,7 +191,6 @@ function popNext(popupId, popupWrap){
         $('form').trigger("reset");
        /* $.fancybox.close(popupId);*/
     },2000);
-
 }
 
 
