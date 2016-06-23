@@ -343,7 +343,7 @@
         }
     }
 /*END practics-----------------------------------------------*/
-#call_success{ background-color: #fffc00; width:586px; padding: 40px 10px; height: 100%; text-align: center; font: 400 44px/1.2 'Avantgarde'; color: #000; }
+#call_success{ background-color: #fffc00;  padding: 40px 10px; height: 100%; text-align: center; font: 400 44px/1.2 'Avantgarde'; color: #000; }
 .fancybox-close{ width: 18px; height: 18px; right: -32px; top: 0px; background-image: none;
     &:before,
     &:after{ content: ''; width: 25px; height: 1px; background-color: #fff; display: block; position: absolute; top: 9px; left: 0;transition: all 400ms;}
